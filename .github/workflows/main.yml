@@ -54,7 +54,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /home/ubuntu/realworld-nuxtjs
-          sudo wget https://github.com/Dowgen/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
-          sudo tar zxvf release.tgz
-          sudo npm install --production
-          sudo pm2 reload pm2.config.json
+          wget https://github.com/Dowgen/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
+          tar zxvf release.tgz
+          npm install --production
+          pm2 reload pm2.config.json
