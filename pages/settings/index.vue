@@ -61,7 +61,6 @@ export default {
       try {
         // 提交表单请求登录
         const { data } = await editUser({ user: this.user })
-        console.log(data.user,'data.user');
         this.$store.commit('setUser', data.user)
         Cookie.set('user', data.user)
 

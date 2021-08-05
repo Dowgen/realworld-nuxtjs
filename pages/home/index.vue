@@ -181,11 +181,11 @@ export default {
   name: 'HomeIndex',
   async asyncData ({ query }) {
     const page = Number.parseInt(query.page|| 1)
-    const limit = 20
+    const limit = 10
     const tab = query.tab || 'global_feed'
     const tag = query.tag
 
-    const loadArticles = tab === 'global_feed'
+    const loadArticles = (tag || (tab === 'global_feed'))
       ? getArticles
       : getYourFeedArticles
 

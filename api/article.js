@@ -9,6 +9,15 @@ export const getArticles = params => {
   })
 }
 
+// 提交文章
+export const postArticles = data => {
+  return request({
+    method: 'POST',
+    url: '/api/articles',
+    data
+  })
+}
+
 // 获取公共文章列表
 export const getYourFeedArticles = params => {
   return request({

@@ -27,7 +27,7 @@
     >
       <i class="ion-plus-round"></i>
       &nbsp;
-      Follow Eric Simons <span class="counter">(10)</span>
+      Follow {{ article.author.username }}
     </button>
     &nbsp;&nbsp;
     <button
@@ -38,7 +38,7 @@
     >
       <i class="ion-heart"></i>
       &nbsp;
-      Favorite Post <span class="counter">(29)</span>
+      Favorite Post <span class="counter">({{ article.favoritesCount }})</span>
     </button>
   </div>
 </template>
