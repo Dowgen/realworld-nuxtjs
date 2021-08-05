@@ -137,9 +137,9 @@ export default {
   async asyncData({ query }) {
     const { data } = await getUser();
     const { user } = data;
-    if (!user?.image) {
-      user.image = "https://static.productionready.io/images/smiley-cyrus.jpg";
-    }
+    // if (!user?.image) {
+    //   user.image = "https://static.productionready.io/images/smiley-cyrus.jpg";
+    // }
 
     const tab = query.tab || "my_articles";
     const tag = query.tag
